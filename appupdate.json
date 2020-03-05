@@ -1,8 +1,8 @@
 {
-"updateTime":"2020.3.3",
-"newVersionCode":"8",
-"newVersionName":"1.1.6",
+"updateTime":"2020.3.5",
+"newVersionCode":"9",
+"newVersionName":"1.1.7",
 "information":"本次更新包括功能更新及质量更新。",
-"content":"新增 ShortCut(支持Android 7.1+)\n新增 分享密钥\n修复 深色主题下的多个颜色问题",
+"content":"新增 ShortCut(支持Android 7.1+)\n新增 分享密钥\n修复 深色主题下的多个颜色问题\n优化 去除多余权限，仅保留网络权限",
 "url":"https://www.lanzous.com/i9womah"
 }
