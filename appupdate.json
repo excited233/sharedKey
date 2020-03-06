@@ -1,8 +1,8 @@
 {
-"updateTime":"2020.3.5",
-"newVersionCode":"9",
-"newVersionName":"1.1.7",
-"information":"本次更新包括功能更新及质量更新。",
-"content":"新增 ShortCut(支持Android 7.1+)\n新增 分享密钥\n修复 深色主题下的多个颜色问题\n优化 去除多余权限，仅保留网络权限",
-"url":"https://www.lanzous.com/i9ymouj"
+"updateTime":"2020.3.6",
+"newVersionCode":"10",
+"newVersionName":"1.1.8",
+"information":"⚠️请注意：如果你已安装1.1.7版本，请在设置中打开“使用外部浏览器打开链接”选项进行更新，否则会无法下载！\n本次更新包括功能更新及质量更新。",
+"content":"优化 向下兼容提升至Android 5\n新增 ShortCut(支持Android 7.1+)\n新增 分享密钥\n修复 深色主题下的多个颜色问题\n修复 检测密钥和安装ID逻辑\n优化 去除多余权限，仅保留网络权限和写入权限\n优化 网页激活预览",
+"url":"https://www.lanzous.com/ia00sgj"
 }
