@@ -1,8 +1,8 @@
 {
 "updateTime":"2020.3.15",
-"newVersionCode":"12",
-"newVersionName":"1.2",
+"newVersionCode":"13",
+"newVersionName":"1.2.1",
 "information":"⚠️请注意：如果你已安装1.1.7版本，请在设置中打开“使用外部浏览器打开链接”选项进行更新，否则会无法下载！\n本次更新包括功能更新及质量更新。",
-"content":"新增 自动检测密钥可用性(beta)",
-"url":"https://www.lanzous.com/ia9xwuj"
+"content":"新增 自动检测密钥可用性(beta)\n修复 打开自动检测你用可用性后，刷新白屏的问题\n紧急修复 无法查看密钥的问题",
+"url":"https://www.lanzous.com/iaaaw6d"
 }
