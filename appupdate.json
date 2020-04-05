@@ -1,8 +1,8 @@
 {
-"updateTime":"2020.4.3",
-"newVersionCode":"20",
-"newVersionName":"1.2.8",
+"updateTime":"2020.4.5",
+"newVersionCode":"21",
+"newVersionName":"1.2.9",
 "information":"请注意：1.2.1版本后修改签名，请卸载旧版本后再安装，之后版本不受影响。\n本次更新包括功能更新及质量更新。",
-"content":"深色模式支持重启应用\n修复历史记录打开共享密钥标题不显示的问题\n新增更新日志\n下载文件增加储存路径提示",
-"url":"https://www.lanzous.com/iay3jef"
+"content":"去除读取内部储存权限，100%符合绿色公约要求\n新增无痕模式、退出时自动清除缓存\n新增Windows/Office旧版本共享密钥\n优化安装包体积",
+"url":"https://www.lanzous.com/ib09k2h"
 }
