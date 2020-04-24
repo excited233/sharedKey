@@ -1,9 +1,9 @@
 {
-"updateTime":"2020.4.12",
-"newVersionCode":"24",
+"updateTime":"2020.4.24",
+"newVersionCode":"25",
 "minVersionCode":"10",
-"newVersionName":"1.3.2",
+"newVersionName":"1.3.3",
 "information":"请注意：1.2.1版本后修改签名，请卸载旧版本后再安装，之后版本不受影响。",
-"content":"更换主题色风格icon\n新增主页切换动画\n新增应用信息（管理空间-应用信息）\n修复分屏模式下部分页面无法滑动的问题\n修复输入密钥时潜在的多个问题\n优化关于UI\n密钥说明支持Windows 8/8.1",
-"url":"https://www.lanzous.com/ib9x4li"
+"content":"支持设置主题颜色\n优化启动时按钮颜色\n增加二次退出确认",
+"url":"https://www.lanzous.com/ibw5rni"
 }
