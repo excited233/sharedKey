@@ -12,6 +12,7 @@ import "com.my.sc.*"
   layout_width="fill_parent";
   layout_height="fill";
   orientation="vertical",
+  id="咖啡布局";
   {
     LinearLayout;
     layout_gravity="center";
@@ -299,7 +300,7 @@ import "com.my.sc.*"
             layout_height="25sp";
             layout_width="25sp";
             colorFilter=内容颜色;
-            src="https://excited233.github.io/sharedKey/icons8_cafe_96px.png";
+            src="https://s1.ax1x.com/2020/05/05/Yk1FC6.png";
           };
           {
             TextView;
@@ -314,3 +315,4 @@ import "com.my.sc.*"
   };
 };
 滑动布局1.addView(loadlayout(咖啡))
+渐变动画(咖啡布局,0,1)
