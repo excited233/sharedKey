@@ -7,6 +7,9 @@ import "com.google.zxing.MaxiCode.*"
 import "com.google.zxing.DataMatrix.*"
 import "com.google.zxing.qrcode.*"
 import "com.my.sc.*"
+
+http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png")
+
 咖啡={
   LinearLayout;
   layout_width="fill_parent";
@@ -300,7 +303,8 @@ import "com.my.sc.*"
             layout_height="25sp";
             layout_width="25sp";
             colorFilter=内容颜色;
-            src="https://ftp.bmp.ovh/imgs/2020/05/9848e2ceafef82f3.png";
+            src="
+            src="https://excited233.github.io/sharedKey/icons8_cafe_96px.png";";
           };
           {
             TextView;
