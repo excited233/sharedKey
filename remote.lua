@@ -300,7 +300,7 @@ import "com.my.sc.*"
             layout_height="25sp";
             layout_width="25sp";
             colorFilter=内容颜色;
-            src="https://s1.ax1x.com/2020/05/05/Yk1FC6.png";
+            src="https://ftp.bmp.ovh/imgs/2020/05/9848e2ceafef82f3.png";
           };
           {
             TextView;
