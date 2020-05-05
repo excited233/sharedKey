@@ -9,7 +9,6 @@ import "com.google.zxing.qrcode.*"
 import "com.my.sc.*"
 
 Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-8",nil,function(code,content,cookie,header)
-end)
 
 咖啡={
   LinearLayout;
@@ -321,3 +320,4 @@ end)
 };
 滑动布局1.addView(loadlayout(咖啡))
 渐变动画(咖啡布局,0,1)
+end)
