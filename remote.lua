@@ -8,7 +8,7 @@ import "com.google.zxing.DataMatrix.*"
 import "com.google.zxing.qrcode.*"
 import "com.my.sc.*"
 
-Http.get(https://excited233.github.io/sharedKey/icons8_cafe_96px.png,nil,"UTF-8",nil,function(code,content,cookie,header)
+Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-8",nil,function(code,content,cookie,header)
 end)
 
 咖啡={
