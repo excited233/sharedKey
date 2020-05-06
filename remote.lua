@@ -395,6 +395,10 @@ if 咖啡值~="1" or debugmode==true then
   咖啡图标.getSettings().setBuiltInZoomControls(true)
   咖啡图标.addJavascriptInterface({},'JsInterface')
   --咖啡图标.setBackgroundColor(0)
-  咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
+  if 主页~="1" then
+    咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
+  else
+    咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe_night.png")
+  end
   渐变动画(咖啡布局,0,1)
 end
