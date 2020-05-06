@@ -306,7 +306,7 @@ import "com.my.sc.*"
             id="咖啡图标";
             layout_gravity="center";
             layout_marginLeft="5sp";
-            layout_height="25sp";
+            --layout_height="25sp";
             layout_width="25sp";
             background=背景颜色;
           };
