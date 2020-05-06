@@ -398,7 +398,7 @@ if 咖啡值~="1" or debugmode==true then
   if 主页~="1" then
     咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
   else
-    咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe_night.png")
+    咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafenight.png")
   end
   渐变动画(咖啡布局,0,1)
 end
