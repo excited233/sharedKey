@@ -113,8 +113,18 @@ import "com.my.sc.*"
                     orientation="vertical";
                     {
                       TextView,
-                      textColor=副字体颜色,
+                      --textColor=副字体颜色,
                       text=Html.fromHtml("<b>分享幸运，就这一杯！</>"),
+                      gravity="center",
+                      textSize="18sp",
+                      layout_height="fill",
+                      layout_width="fill_parent",
+                    },
+                    {
+                      TextView,
+                      --textColor=副字体颜色,
+                      layout_marginTop="5sp";
+                      text=Html.fromHtml("使用<b>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得1张<b>免费券</>和2张<b>4.8折券</>，<b><i>完全免费</></>。"),
                       gravity="center",
                       textSize="18sp",
                       layout_height="fill",
@@ -124,17 +134,17 @@ import "com.my.sc.*"
                       TextView,
                       textColor=副字体颜色,
                       layout_marginTop="5sp";
-                      text=Html.fromHtml("使用<i>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得1张<i>免费券</>和2张<i>4.8折券</>，<b>完全免费</>。"),
+                      text=Html.fromHtml("在你首次<b>成功购买</>后，作者也会获得一张免费券。"),
                       gravity="center",
-                      textSize="16sp",
+                      textSize="14sp",
                       layout_height="fill",
                       layout_width="fill_parent",
                     },
                     {
                       TextView,
-                      textColor=副字体颜色,
+                      textColor=波纹颜色,
                       layout_marginTop="5sp";
-                      text="在你首次成功购买后，作者也会获得一张免费券。",
+                      text=Html.fromHtml("注：免费券需要在luckincoffee <b>APP</>中使用。"),
                       gravity="center",
                       textSize="14sp",
                       layout_height="fill",
@@ -230,7 +240,7 @@ import "com.my.sc.*"
               layout_width="fill_parent";
               onClick=function(v)
                 print("已复制")
-                activity.getSystemService(Context.CLIPBOARD_SERVICE).setText(下载链接)
+                activity.getSystemService(Context.CLIPBOARD_SERVICE).setText("https://wap.luckincoffee.com/invited/register?type=coffee&activityNo=NR201801030001&inviteCode=Y1rCPq1FkoO0Zc7aafzXJg%3D%3D&secondfrom=1")
                 弹窗关闭()
               end,
               foreground=波纹1(),
