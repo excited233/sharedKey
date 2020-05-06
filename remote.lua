@@ -7,9 +7,6 @@ import "com.google.zxing.MaxiCode.*"
 import "com.google.zxing.DataMatrix.*"
 import "com.google.zxing.qrcode.*"
 import "com.my.sc.*"
-
-Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-8",nil,function(code,content,cookie,header)
-
 咖啡={
   LinearLayout;
   layout_width="fill_parent";
@@ -77,7 +74,7 @@ Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-
                     TextView,
                     textColor=副字体颜色,
                     ----textStyle="bold",
-                    text=Html.fromHtml("使用<b>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得一张<b>免费券</>和若干<b>4.8折券</>，<b>完全免费</>。"),
+                    text=Html.fromHtml("使用<b>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得1张<b>免费券</>和2张<b>4.8折券</>，<b>完全免费</>。"),
                     gravity="center",
                     textSize="16sp",
                     layout_height="fill",
@@ -87,17 +84,7 @@ Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-
                     TextView,
                     textColor=副字体颜色,
                     ----textStyle="bold",
-                    text="托您的福，在您首次成功购买后，作者也会获得一张免费券。",
-                    gravity="center",
-                    textSize="14sp",
-                    layout_height="fill",
-                    layout_width="fill_parent",
-                  },
-                  {
-                    TextView,
-                    textColor=副字体颜色,
-                    ----textStyle="bold",
-                    text="如需使用免费券，请下载luckin coffee APP。",
+                    text="在你首次成功购买后，作者也会获得一张免费券。",
                     gravity="center",
                     textSize="14sp",
                     layout_height="fill",
@@ -109,6 +96,24 @@ Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-
                     layout_height="60%w";
                     layout_width="60%w";
                   };
+                  {
+                    TextView,
+                    textColor=副字体颜色,
+                    ----textStyle="bold",
+                    text=[[好友领取及使用新人大券包说明
+1、新用户首次登录 luckincoffee APP及小程序可免费获赠新人大券包（登录luckincoffee APP或小鹿茶APP使用）
+新人大券包内含:1张新人指定免费券+2张4.8折券
+新人指定免费饮品券，仅限购买1件商品（不可抵扣配送费，不可抵扣风味糖浆、奶盖等附加口味）。券有效期1年
+适用范围:啵啵奶茶系列、牛乳茶系列、大师咖啡系列饮品2张4.8折券为:2张4.8折全场饮品券，自领取之日起，有效期30天。
+2、您可登录luckin coffee APP及小程序，查看身边是否有开业门店
+3、新人指定免费饮品券，不支持异地下单
+4、同一手机设备、同一手机号码仅可领取一次新人大券包
+5、新人指定免费饮品券及优惠券的使用规则以 luckincoffeeAPP及小程序公示规则为准]],
+                    gravity="left|center",
+                    textSize="8sp",
+                    layout_height="fill",
+                    layout_width="fill_parent",
+                  },
                 },
               },
             };
@@ -298,12 +303,12 @@ Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-
           layout_alignParentLeft=true,
           {
             ImageView;
+            id="咖啡图标";
             layout_gravity="center";
             layout_marginLeft="5sp";
             layout_height="25sp";
             layout_width="25sp";
             colorFilter=内容颜色;
-            src="https://excited233.github.io/sharedKey/icons8_cafe_96px.png";
           };
           {
             TextView;
@@ -317,6 +322,8 @@ Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-
     },
   };
 };
-滑动布局1.addView(loadlayout(咖啡))
-渐变动画(咖啡布局,0,1)
+Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-8",nil,function(code,content,cookie,header)
+  滑动布局1.addView(loadlayout(咖啡))
+  咖啡图标.setImageBitmap(loadbitmap("https://excited233.github.io/sharedKey/icons8_cafe_96px.png"))
+  渐变动画(咖啡布局,0,1)
 end)
