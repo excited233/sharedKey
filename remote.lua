@@ -302,13 +302,13 @@ import "com.my.sc.*"
           layout_height="fill_parent";
           layout_alignParentLeft=true,
           {
-            ImageView;
+            WebView;
             id="咖啡图标";
             layout_gravity="center";
             layout_marginLeft="5sp";
             layout_height="25sp";
             layout_width="25sp";
-            colorFilter=内容颜色;
+            background=背景颜色;
           };
           {
             TextView;
@@ -322,8 +322,15 @@ import "com.my.sc.*"
     },
   };
 };
-Http.get("https://excited233.github.io/sharedKey/icons8_cafe_96px.png",nil,"UTF-8",nil,function(code,content,cookie,header)
-  滑动布局1.addView(loadlayout(咖啡))
-  咖啡图标.setImageBitmap(loadbitmap("https://excited233.github.io/sharedKey/icons8_cafe_96px.png"))
-  渐变动画(咖啡布局,0,1)
-end)
+滑动布局1.addView(loadlayout(咖啡))
+--咖啡图标.requestFocusFromTouch()
+咖啡图标.getSettings().setJavaScriptEnabled(true)
+咖啡图标.getSettings().setUseWideViewPort(true)
+--咖啡图标.getSettings().setSupportZoom(true);
+咖啡图标.getSettings().setDisplayZoomControls(false)
+咖啡图标.getSettings().setLoadWithOverviewMode(true)
+咖啡图标.getSettings().setBuiltInZoomControls(true)
+咖啡图标.addJavascriptInterface({},'JsInterface')
+--咖啡图标.setBackgroundColor(0)
+咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
+渐变动画(咖啡布局,0,1)
