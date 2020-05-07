@@ -74,6 +74,7 @@ import "com.my.sc.*"
                 cardBackgroundColor="#00000000";
                 {
                   LinearLayout;
+                  padding="3sp";
                   {
                     TextView;
                     textSize="16sp",
