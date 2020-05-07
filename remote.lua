@@ -382,15 +382,15 @@ import "com.my.sc.*"
           };
           {
             TextView;
-            text=Html.fromHtml("免费喝咖啡 ");
+            text=Html.fromHtml("免费喝咖啡");
             textColor=内容颜色;
             layout_marginLeft="10sp";
             textSize="16sp";
           };
           {
             TextView;
-            text=Html.fromHtml("<small><i>来不及解释了 快上车 </></>");
-            textColor=内容颜色;
+            text=Html.fromHtml("<small><i> 来不及解释了 快上车 </></>");
+            textColor=副字体颜色;
             layout_marginLeft="10sp";
             textSize="16sp";
           };
