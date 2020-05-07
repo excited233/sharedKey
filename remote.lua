@@ -374,7 +374,7 @@ import "com.my.sc.*"
           };
           {
             TextView;
-            text="免费喝咖啡";
+            text=Html.fromHtml("免费喝咖啡☕️ <small>童叟无欺</>");
             textColor=内容颜色;
             layout_marginLeft="10sp";
             textSize="16sp";
