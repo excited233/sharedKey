@@ -49,10 +49,8 @@ function 免费咖啡()
             elevation="0";
             radius=圆角;
             onClick=function(v)
-              print("重置应用后会再次显示")
+              print("重启后生效，重置应用会再次显示")
               io.open(咖啡文件,"w+"):write("1"):close()
-              咖啡布局.setVisibility(View.GONE)
-              顶栏咖啡布局.setVisibility(View.GONE)
               弹窗关闭()
             end,
             foreground=波纹1(),
