@@ -11,6 +11,325 @@ import "com.google.zxing.MaxiCode.*"
 import "com.google.zxing.DataMatrix.*"
 import "com.google.zxing.qrcode.*"
 import "com.my.sc.*"
+
+function 免费咖啡()
+  MLayout={
+    RelativeLayout;
+    {
+      LinearLayout;
+      layout_width="fill_parent";
+      orientation="vertical";
+      {
+        RelativeLayout;
+        {
+          LinearLayout;
+          gravity="left";
+          layout_alignParentLeft=true,
+          layout_marginTop="10sp";
+          layout_marginBottom="10sp";
+          {
+            TextView;
+            textSize="18sp",
+            textColor=内容颜色;
+            layout_marginLeft="10sp";
+            layout_gravity="left|center",
+            text=Html.fromHtml("<b>免费喝咖啡☕️");
+          };
+        };
+        {
+          LinearLayout;
+          gravity="right";
+          layout_alignParentRight=true,
+          layout_marginTop="10sp";
+          layout_marginBottom="10sp";
+          {
+            CardView;
+            layout_marginTop="0sp";
+            layout_marginRight="10sp";
+            elevation="0";
+            radius=圆角;
+            onClick=function(v)
+              print("重置应用后会再次显示")
+              io.open(咖啡文件,"w+"):write("1"):close()
+              咖啡布局.setVisibility(View.GONE)
+              顶栏咖啡布局.setVisibility(View.GONE)
+              弹窗关闭()
+            end,
+            foreground=波纹1(),
+            cardBackgroundColor="#00000000";
+            {
+              LinearLayout;
+              padding="3sp";
+              {
+                TextView;
+                textSize="16sp",
+                textColor=副字体颜色;
+                layout_gravity="right|center",
+                text="不再提示";
+              };
+            };
+          };
+        };
+      };
+      {
+        ScrollView,
+        layout_width="fill_parent";
+        layout_marginBottom="135sp";
+        {
+          LinearLayout;
+          layout_width="fill_parent";
+          gravity="center";
+          orientation="vertical";
+          {
+            CardView;
+            layout_marginTop="0sp";
+            elevation="0";
+            radius=圆角;
+            cardBackgroundColor="#00000000";
+            {
+              RelativeLayout,
+              paddingLeft="10sp";
+              paddingRight="10sp";
+              layout_width="fill_parent";
+              {
+                LinearLayout,
+                gravity="center";
+                layout_width="fill_parent";
+                layout_alignParentLeft=true,
+                orientation="vertical";
+                {
+                  TextView,
+                  --textColor=副字体颜色,
+                  text=Html.fromHtml("<b>分享幸运，就这一杯！</>"),
+                  gravity="center",
+                  textSize="18sp",
+                  layout_height="fill",
+                  layout_width="fill_parent",
+                },
+                {
+                  TextView,
+                  --textColor=副字体颜色,
+                  layout_marginTop="5sp";
+                  text=Html.fromHtml("使用<b>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得1张<b>免费券</>和2张<b>4.8折券</>，<b><i>完全免费</></>。"),
+                  gravity="center",
+                  textSize="18sp",
+                  layout_height="fill",
+                  layout_width="fill_parent",
+                },
+                {
+                  TextView,
+                  textColor=副字体颜色,
+                  layout_marginTop="5sp";
+                  text=Html.fromHtml("在你首次<b>成功购买</>后，作者也会获得一张免费券。"),
+                  gravity="center",
+                  textSize="14sp",
+                  layout_height="fill",
+                  layout_width="fill_parent",
+                },
+                {
+                  TextView,
+                  textColor=波纹颜色,
+                  layout_marginTop="5sp";
+                  text=Html.fromHtml("注：免费券需要在luckincoffee <b>APP</>中使用。"),
+                  gravity="center",
+                  textSize="14sp",
+                  layout_height="fill",
+                  layout_width="fill_parent",
+                },
+                {
+                  ImageView;
+                  id="二维码";
+                  layout_height="60%w";
+                  layout_width="60%w";
+                };
+                {
+                  TextView,
+                  textColor=副字体颜色,
+                  text=[[好友领取及使用新人大券包说明
+1、新用户首次登录luckincoffee APP及小程序可免费获赠新人大券包（登录luckincoffee APP或小鹿茶APP使用）
+新人大券包内含:1张新人指定免费券+2张4.8折券
+新人指定免费饮品券，仅限购买1件商品（不可抵扣配送费，不可抵扣风味糖浆、奶盖等附加口味）。券有效期1年
+适用范围:啵啵奶茶系列、牛乳茶系列、大师咖啡系列饮品2张4.8折券为:2张4.8折全场饮品券，自领取之日起，有效期30天。
+2、您可登录luckincoffee APP及小程序，查看身边是否有开业门店
+3、新人指定免费饮品券，不支持异地下单
+4、同一手机设备、同一手机号码仅可领取一次新人大券包
+5、新人指定免费饮品券及优惠券的使用规则以luckincoffee APP及小程序公示规则为准]],
+                  gravity="left|center",
+                  textSize="10sp",
+                  layout_height="fill",
+                  layout_width="fill_parent",
+                },
+              },
+            },
+          };
+
+        };
+      };
+    };
+    {
+      LinearLayout;
+      layout_width="fill_parent";
+      layout_alignParentBottom=true,
+      orientation="vertical";
+      {
+        CardView;
+        elevation="0";
+        radius=圆角;
+        cardBackgroundColor="#00000000";
+        {
+          RelativeLayout,
+          padding="10sp";
+          layout_width="fill_parent";
+          onClick=function(v)
+            packageName="com.tencent.mm"
+            import "android.content.Intent"
+            import "android.content.pm.PackageManager"
+            manager = activity.getPackageManager()
+            open = manager.getLaunchIntentForPackage(packageName)
+            this.startActivity(open)
+            弹窗关闭()
+          end,
+          foreground=波纹1(),
+          {
+            LinearLayout,
+            gravity="center|left";
+            layout_width="fill_parent";
+            layout_alignParentLeft=true,
+            {
+              ImageView,
+              colorFilter=内容颜色,
+              src="drawable/right.png",
+              layout_height="25sp",
+              layout_width="25sp",
+            },
+            {
+              TextView,
+              textColor=副字体颜色,
+              layout_marginLeft="5sp";
+              text="打开微信",
+              gravity="left|center",
+              textSize="16sp",
+              layout_height="fill",
+            },
+          },
+        },
+      };
+      {
+        CardView;
+        layout_marginTop="0sp";
+        elevation="0";
+        radius=圆角;
+        cardBackgroundColor="#00000000";
+        {
+          RelativeLayout,
+          padding="10sp";
+          layout_width="fill_parent";
+          onClick=function(v)
+            print("已复制")
+            activity.getSystemService(Context.CLIPBOARD_SERVICE).setText("https://wap.luckincoffee.com/invited/register?type=coffee&activityNo=NR201801030001&inviteCode=Y1rCPq1FkoO0Zc7aafzXJg%3D%3D&secondfrom=1")
+            弹窗关闭()
+          end,
+          foreground=波纹1(),
+          {
+            LinearLayout,
+            gravity="center|left";
+            layout_width="fill_parent";
+            layout_alignParentLeft=true,
+            {
+              ImageView,
+              colorFilter=内容颜色,
+              src="drawable/copy.png",
+              layout_height="25sp",
+              layout_width="25sp",
+            },
+            {
+              TextView,
+              textColor=副字体颜色,
+              layout_marginLeft="5sp";
+              text="复制链接",
+              gravity="left|center",
+              textSize="16sp",
+              layout_height="fill",
+            },
+          },
+        },
+      };
+      {
+        CardView;
+        elevation="0";
+        radius=圆角;
+        cardBackgroundColor="#00000000";
+        {
+          RelativeLayout,
+          padding="10sp";
+          layout_width="fill_parent";
+          onClick=function(v)
+            弹窗关闭()
+          end,
+          foreground=波纹1(),
+          {
+            LinearLayout,
+            gravity="center|left";
+            layout_width="fill_parent";
+            layout_alignParentLeft=true,
+            {
+              ImageView,
+              colorFilter=内容颜色,
+              src="drawable/close.png",
+              layout_height="25sp",
+              layout_width="25sp",
+            },
+            {
+              TextView,
+              textColor=副字体颜色,
+              layout_marginLeft="5sp";
+              text="关闭",
+              gravity="left|center",
+              textSize="16sp",
+              layout_height="fill",
+            },
+          },
+        },
+      };
+    };
+  };
+
+  弹窗滑动时间=250
+  弹窗阴影变化时间=250
+  弹窗高度="fill"
+  弹窗圆角=圆角
+  弹窗外部颜色="#85000000"
+  弹窗阴影="5sp"
+  弹窗背景=背景颜色2
+  弹窗宽度="fill_parent"
+  弹窗上边距=状态栏高度+导航栏高度*2
+  弹窗下边距="10sp"
+  弹窗左边距="10sp"
+  弹窗右边距="10sp"
+  弹窗保存参数()
+  function 触摸弹窗空白区域事件(视图,事件)
+    弹窗关闭()
+  end
+  function 点击弹窗空白区域事件()
+    弹窗关闭()
+  end
+  function 弹窗位置改变事件(弹窗位置)
+    if 弹窗位置==1 then
+      弹窗关闭()
+    end
+  end
+  function 弹窗滑动事件(滑动弹窗,滑动偏移百分比,滑动偏移像素)
+    if 滑动弹窗==1 then
+      弹窗关闭()
+    end
+  end
+  function 弹窗状态改变事件(弹窗状态)
+  end
+  弹窗设置布局(MLayout)
+  弹窗打开()
+  二维码.setImageBitmap(MainActivity.Create2DCode("https://wap.luckincoffee.com/invited/register?type=coffee&activityNo=NR201801030001&inviteCode=Y1rCPq1FkoO0Zc7aafzXJg%3D%3D&secondfrom=1"))
+end
+
 咖啡={
   LinearLayout;
   layout_width="fill_parent";
@@ -30,319 +349,7 @@ import "com.my.sc.*"
     radius=圆角;
     foreground=波纹1(),
     onClick=function()
-      MLayout={
-        RelativeLayout;
-        {
-          LinearLayout;
-          layout_width="fill_parent";
-          orientation="vertical";
-          {
-            RelativeLayout;
-            {
-              LinearLayout;
-              gravity="left";
-              layout_alignParentLeft=true,
-              layout_marginTop="10sp";
-              layout_marginBottom="10sp";
-              {
-                TextView;
-                textSize="18sp",
-                textColor=内容颜色;
-                layout_marginLeft="10sp";
-                layout_gravity="left|center",
-                text=Html.fromHtml("<b>免费喝咖啡☕️");
-              };
-            };
-            {
-              LinearLayout;
-              gravity="right";
-              layout_alignParentRight=true,
-              layout_marginTop="10sp";
-              layout_marginBottom="10sp";
-              {
-                CardView;
-                layout_marginTop="0sp";
-                layout_marginRight="10sp";
-                elevation="0";
-                radius=圆角;
-                onClick=function(v)
-                  io.open(咖啡文件,"w+"):write("1"):close()
-                  咖啡布局.setVisibility(View.GONE)
-                  弹窗关闭()
-                end,
-                foreground=波纹1(),
-                cardBackgroundColor="#00000000";
-                {
-                  LinearLayout;
-                  padding="3sp";
-                  {
-                    TextView;
-                    textSize="16sp",
-                    textColor=副字体颜色;
-                    layout_gravity="right|center",
-                    text="不再提示";
-                  };
-                };
-              };
-            };
-          };
-          {
-            ScrollView,
-            layout_width="fill_parent";
-            layout_marginBottom="135sp";
-            {
-              LinearLayout;
-              layout_width="fill_parent";
-              gravity="center";
-              orientation="vertical";
-              {
-                CardView;
-                layout_marginTop="0sp";
-                elevation="0";
-                radius=圆角;
-                cardBackgroundColor="#00000000";
-                {
-                  RelativeLayout,
-                  paddingLeft="10sp";
-                  paddingRight="10sp";
-                  layout_width="fill_parent";
-                  {
-                    LinearLayout,
-                    gravity="center";
-                    layout_width="fill_parent";
-                    layout_alignParentLeft=true,
-                    orientation="vertical";
-                    {
-                      TextView,
-                      --textColor=副字体颜色,
-                      text=Html.fromHtml("<b>分享幸运，就这一杯！</>"),
-                      gravity="center",
-                      textSize="18sp",
-                      layout_height="fill",
-                      layout_width="fill_parent",
-                    },
-                    {
-                      TextView,
-                      --textColor=副字体颜色,
-                      layout_marginTop="5sp";
-                      text=Html.fromHtml("使用<b>微信</>扫描以下二维码注册瑞幸咖啡帐号，即可获得1张<b>免费券</>和2张<b>4.8折券</>，<b><i>完全免费</></>。"),
-                      gravity="center",
-                      textSize="18sp",
-                      layout_height="fill",
-                      layout_width="fill_parent",
-                    },
-                    {
-                      TextView,
-                      textColor=副字体颜色,
-                      layout_marginTop="5sp";
-                      text=Html.fromHtml("在你首次<b>成功购买</>后，作者也会获得一张免费券。"),
-                      gravity="center",
-                      textSize="14sp",
-                      layout_height="fill",
-                      layout_width="fill_parent",
-                    },
-                    {
-                      TextView,
-                      textColor=波纹颜色,
-                      layout_marginTop="5sp";
-                      text=Html.fromHtml("注：免费券需要在luckincoffee <b>APP</>中使用。"),
-                      gravity="center",
-                      textSize="14sp",
-                      layout_height="fill",
-                      layout_width="fill_parent",
-                    },
-                    {
-                      ImageView;
-                      id="二维码";
-                      layout_height="60%w";
-                      layout_width="60%w";
-                    };
-                    {
-                      TextView,
-                      textColor=副字体颜色,
-                      text=[[好友领取及使用新人大券包说明
-1、新用户首次登录luckincoffee APP及小程序可免费获赠新人大券包（登录luckincoffee APP或小鹿茶APP使用）
-新人大券包内含:1张新人指定免费券+2张4.8折券
-新人指定免费饮品券，仅限购买1件商品（不可抵扣配送费，不可抵扣风味糖浆、奶盖等附加口味）。券有效期1年
-适用范围:啵啵奶茶系列、牛乳茶系列、大师咖啡系列饮品2张4.8折券为:2张4.8折全场饮品券，自领取之日起，有效期30天。
-2、您可登录luckincoffee APP及小程序，查看身边是否有开业门店
-3、新人指定免费饮品券，不支持异地下单
-4、同一手机设备、同一手机号码仅可领取一次新人大券包
-5、新人指定免费饮品券及优惠券的使用规则以luckincoffee APP及小程序公示规则为准]],
-                      gravity="left|center",
-                      textSize="10sp",
-                      layout_height="fill",
-                      layout_width="fill_parent",
-                    },
-                  },
-                },
-              };
-
-            };
-          };
-        };
-        {
-          LinearLayout;
-          layout_width="fill_parent";
-          layout_alignParentBottom=true,
-          orientation="vertical";
-          {
-            CardView;
-            elevation="0";
-            radius=圆角;
-            cardBackgroundColor="#00000000";
-            {
-              RelativeLayout,
-              padding="10sp";
-              layout_width="fill_parent";
-              onClick=function(v)
-                packageName="com.tencent.mm"
-                import "android.content.Intent"
-                import "android.content.pm.PackageManager"
-                manager = activity.getPackageManager()
-                open = manager.getLaunchIntentForPackage(packageName)
-                this.startActivity(open)
-                弹窗关闭()
-              end,
-              foreground=波纹1(),
-              {
-                LinearLayout,
-                gravity="center|left";
-                layout_width="fill_parent";
-                layout_alignParentLeft=true,
-                {
-                  ImageView,
-                  colorFilter=内容颜色,
-                  src="drawable/right.png",
-                  layout_height="25sp",
-                  layout_width="25sp",
-                },
-                {
-                  TextView,
-                  textColor=副字体颜色,
-                  layout_marginLeft="5sp";
-                  text="打开微信",
-                  gravity="left|center",
-                  textSize="16sp",
-                  layout_height="fill",
-                },
-              },
-            },
-          };
-          {
-            CardView;
-            layout_marginTop="0sp";
-            elevation="0";
-            radius=圆角;
-            cardBackgroundColor="#00000000";
-            {
-              RelativeLayout,
-              padding="10sp";
-              layout_width="fill_parent";
-              onClick=function(v)
-                print("已复制")
-                activity.getSystemService(Context.CLIPBOARD_SERVICE).setText("https://wap.luckincoffee.com/invited/register?type=coffee&activityNo=NR201801030001&inviteCode=Y1rCPq1FkoO0Zc7aafzXJg%3D%3D&secondfrom=1")
-                弹窗关闭()
-              end,
-              foreground=波纹1(),
-              {
-                LinearLayout,
-                gravity="center|left";
-                layout_width="fill_parent";
-                layout_alignParentLeft=true,
-                {
-                  ImageView,
-                  colorFilter=内容颜色,
-                  src="drawable/copy.png",
-                  layout_height="25sp",
-                  layout_width="25sp",
-                },
-                {
-                  TextView,
-                  textColor=副字体颜色,
-                  layout_marginLeft="5sp";
-                  text="复制链接",
-                  gravity="left|center",
-                  textSize="16sp",
-                  layout_height="fill",
-                },
-              },
-            },
-          };
-          {
-            CardView;
-            elevation="0";
-            radius=圆角;
-            cardBackgroundColor="#00000000";
-            {
-              RelativeLayout,
-              padding="10sp";
-              layout_width="fill_parent";
-              onClick=function(v)
-                弹窗关闭()
-              end,
-              foreground=波纹1(),
-              {
-                LinearLayout,
-                gravity="center|left";
-                layout_width="fill_parent";
-                layout_alignParentLeft=true,
-                {
-                  ImageView,
-                  colorFilter=内容颜色,
-                  src="drawable/close.png",
-                  layout_height="25sp",
-                  layout_width="25sp",
-                },
-                {
-                  TextView,
-                  textColor=副字体颜色,
-                  layout_marginLeft="5sp";
-                  text="关闭",
-                  gravity="left|center",
-                  textSize="16sp",
-                  layout_height="fill",
-                },
-              },
-            },
-          };
-        };
-      };
-
-      弹窗滑动时间=250
-      弹窗阴影变化时间=250
-      弹窗高度="fill"
-      弹窗圆角=圆角
-      弹窗外部颜色="#85000000"
-      弹窗阴影="5sp"
-      弹窗背景=背景颜色2
-      弹窗宽度="fill_parent"
-      弹窗上边距=状态栏高度+导航栏高度*2
-      弹窗下边距="10sp"
-      弹窗左边距="10sp"
-      弹窗右边距="10sp"
-      弹窗保存参数()
-      function 触摸弹窗空白区域事件(视图,事件)
-        弹窗关闭()
-      end
-      function 点击弹窗空白区域事件()
-        弹窗关闭()
-      end
-      function 弹窗位置改变事件(弹窗位置)
-        if 弹窗位置==1 then
-          弹窗关闭()
-        end
-      end
-      function 弹窗滑动事件(滑动弹窗,滑动偏移百分比,滑动偏移像素)
-        if 滑动弹窗==1 then
-          弹窗关闭()
-        end
-      end
-      function 弹窗状态改变事件(弹窗状态)
-      end
-      弹窗设置布局(MLayout)
-      弹窗打开()
-      二维码.setImageBitmap(MainActivity.Create2DCode("https://wap.luckincoffee.com/invited/register?type=coffee&activityNo=NR201801030001&inviteCode=Y1rCPq1FkoO0Zc7aafzXJg%3D%3D&secondfrom=1"))
+      免费咖啡()
     end;
     layout_marginTop="10sp";
     layout_margin="10sp";
@@ -365,13 +372,31 @@ import "com.my.sc.*"
           layout_height="fill_parent";
           layout_alignParentLeft=true,
           {
-            WebView;
-            id="咖啡图标";
-            layout_gravity="center";
-            layout_marginLeft="5sp";
-            --layout_height="25sp";
-            layout_width="25sp";
-            background=背景颜色;
+            RelativeLayout;
+            gravity="center";
+            {
+              LinearLayout;
+              gravity="center";
+              {
+                WebView;
+                id="咖啡图标";
+                focusable=false;
+                layout_marginLeft="5sp";
+                layout_gravity="center";
+                --layout_height="25sp";
+                layout_width="25sp";
+                background=背景颜色;
+              };
+            };
+            {
+              LinearLayout;
+              layout_height="25sp";
+              layout_width="25sp";
+              --foreground=波纹1(),
+              onClick=function()
+                免费咖啡()
+              end;
+            };
           };
           {
             TextView;
@@ -392,8 +417,53 @@ import "com.my.sc.*"
     },
   };
 };
+
+顶栏咖啡=
+{
+  CardView;
+  id="顶栏咖啡布局";
+  --id="清除";
+  cardBackgroundColor="#00000000";
+  layout_height="56sp";
+  layout_width="56sp";
+  elevation="0sp";
+  radius=圆角;
+  {
+    RelativeLayout;
+    layout_height="56sp";
+    layout_width="56sp";
+    gravity="center";
+    {
+      LinearLayout;
+      layout_height="56sp";
+      layout_width="56sp";
+      gravity="center";
+      {
+        WebView;
+        id="顶栏咖啡图标";
+        focusable=false;
+        layout_marginLeft="5sp";
+        layout_gravity="center";
+        --layout_height="25sp";
+        layout_width="25sp";
+        background=背景颜色;
+      };
+    };
+    {
+      LinearLayout;
+      layout_height="56sp";
+      layout_width="56sp";
+      foreground=波纹1(),
+      onClick=function()
+        免费咖啡()
+      end;
+    };
+  };
+};
+
 if 咖啡值~="1" or debugmode==true then
   滑动布局1.addView(loadlayout(咖啡))
+  toolbar.getChildAt(2).addView(loadlayout(顶栏咖啡),1)
   --咖啡图标.requestFocusFromTouch()
   咖啡图标.getSettings().setJavaScriptEnabled(true)
   咖啡图标.getSettings().setUseWideViewPort(true)
@@ -403,10 +473,23 @@ if 咖啡值~="1" or debugmode==true then
   咖啡图标.getSettings().setBuiltInZoomControls(true)
   咖啡图标.addJavascriptInterface({},'JsInterface')
   --咖啡图标.setBackgroundColor(0)
+
+  --顶栏咖啡图标.requestFocusFromTouch()
+  顶栏咖啡图标.getSettings().setJavaScriptEnabled(true)
+  顶栏咖啡图标.getSettings().setUseWideViewPort(true)
+  --顶栏咖啡图标.getSettings().setSupportZoom(true);
+  顶栏咖啡图标.getSettings().setDisplayZoomControls(false)
+  顶栏咖啡图标.getSettings().setLoadWithOverviewMode(true)
+  顶栏咖啡图标.getSettings().setBuiltInZoomControls(true)
+  顶栏咖啡图标.addJavascriptInterface({},'JsInterface')
+  --顶栏咖啡图标.setBackgroundColor(0)
   if 主页~="1" then
     咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
-  else
+    顶栏咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafe.png")
+   else
     咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafenight.png")
+    顶栏咖啡图标.loadUrl("https://excited233.github.io/sharedKey/cafenight.png")
   end
   渐变动画(咖啡布局,0,1)
+  渐变动画(顶栏咖啡布局,0,1)
 end
