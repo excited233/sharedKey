@@ -440,7 +440,7 @@ end
         WebView;
         id="顶栏咖啡图标";
         focusable=false;
-        layout_marginLeft="5sp";
+        --layout_marginLeft="5sp";
         layout_gravity="center";
         --layout_height="25sp";
         layout_width="25sp";
