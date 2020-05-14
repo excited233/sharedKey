@@ -387,15 +387,6 @@ if tonumber(versionCode)>=30 or debugmode==true then
                   src="drawable/cafe.png";
                 };
               };
-              {
-                LinearLayout;
-                layout_height="25sp";
-                layout_width="25sp";
-                --foreground=波纹1(),
-                onClick=function()
-                  免费咖啡()
-                end;
-              };
             };
             {
               TextView;
@@ -446,7 +437,6 @@ if tonumber(versionCode)>=30 or debugmode==true then
           layout_gravity="center";
           layout_height="25sp";
           layout_width="25sp";
-          background=背景颜色;
         };
       };
       {
