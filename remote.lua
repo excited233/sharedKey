@@ -588,7 +588,7 @@ if tonumber(versionCode)>=30 or debugmode==true then
       };
     };
   };
-  if 咖啡值~="1" or debugmode==true then
+  if 咖啡值=="s" or debugmode==true then
     滑动布局1.addView(loadlayout(咖啡))
     toolbar.getChildAt(2).addView(loadlayout(顶栏咖啡),1)
     --咖啡图标.requestFocusFromTouch()
