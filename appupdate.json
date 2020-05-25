@@ -1,9 +1,9 @@
 {
-"updateTime":"2020.5.21",
-"newVersionCode":"31",
-"newVersionName":"1.3.9",
+"updateTime":"2020.5.26",
+"newVersionCode":"32",
+"newVersionName":"1.4.0",
 "minVersionCode":"10",
 "information":"本次更新包含功能更新。",
-"content":"请注意：1.2.1版本后修改签名，请卸载旧版本后再安装，之后版本不受影响。\n新增新手引导\n点击密钥/安装ID预览时可以定位输入框位置\n使用手册视觉更新\n修复重复检测剪贴板中的密钥和安装ID的问题",
-"url":"https://too-young.lanzous.com/icve2ed"
+"content":"请注意：1.2.1版本后修改签名，请卸载旧版本后再安装，之后版本不受影响。\n新增通知栏提醒（可在设置中关闭）\n修复若干Bug",
+"url":"https://too-young.lanzous.com/iczz0cj"
 }
