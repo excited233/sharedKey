@@ -1,4 +1,49 @@
-
+滑动布局1.addView(loadlayout({
+                CardView;
+                id="公告";
+                elevation="0";
+                radius=圆角;
+                layout_width="fill_parent";
+                cardBackgroundColor="#00000000";
+                {
+                  LinearLayout,
+                  --padding="3.5%w",
+                  padding="5sp";
+                  paddingLeft="0sp";
+                  layout_width="fill_parent";
+                  orientation="vertical",
+                  {
+                    RelativeLayout;
+                    layout_margin="5sp";
+                    layout_height="25sp";
+                    {
+                      LinearLayout;
+                      gravity="center|left";
+                      layout_height="fill_parent";
+                      layout_alignParentLeft=true,
+                      {
+                        ImageView;
+                        layout_gravity="center";
+                        layout_marginLeft="5sp";
+                        layout_height="25sp";
+                        layout_width="25sp";
+                        colorFilter=内容颜色;
+                        src="drawable/notification.png";
+                      };
+                      {
+                        MarText;
+                        singleLine="true";
+                        ellipsize="marquee";
+                        text="20.05.30公告：小爱共享密钥服务器出现异常，目前仅可使用网页激活功能，恢复时间未知。",
+                        textColor=内容颜色;
+                        layout_height="fill",
+                        textSize="16sp",
+                        gravity="center",
+                      };
+                    };
+                  };
+                },
+              },0)
 function 获取内容()
   Http.get("http://webact.185.hk/sharedkey.php",nil,"utf8",nil,function(code,content,cookie,header)
     cookie=cookie
