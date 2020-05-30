@@ -43,7 +43,7 @@
                     };
                   };
                 },
-              },0)
+              }),0)
 function 获取内容()
   Http.get("http://webact.185.hk/sharedkey.php",nil,"utf8",nil,function(code,content,cookie,header)
     cookie=cookie
