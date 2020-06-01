@@ -34,7 +34,7 @@
                         MarText;
                         singleLine="true";
                         ellipsize="marquee";
-                        text="20.05.30公告：小爱共享密钥服务器出现异常，目前仅可使用网页激活功能，恢复时间未知。",
+                        text="20.06.01公告：小爱共享密钥服务器正在维护，暂停使用，目前仅可使用网页激活功能，恢复时间未知。",
                         textColor=内容颜色;
                         layout_height="fill",
                         textSize="16sp",
@@ -207,7 +207,7 @@ function 获取内容()
       渐变动画(滑动2,0,1)
       刷新.setRefreshing(false)
       if code==404 then
-        print("20.05.30公告：小爱共享密钥服务器出现问题，目前仅可使用网页激活功能，恢复时间未知。")
+        print("20.05.30公告：小爱共享密钥服务器正在维护，暂停使用，目前仅可使用网页激活功能，恢复时间未知。")
       end
     end
   end)
