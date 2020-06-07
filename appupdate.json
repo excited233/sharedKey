@@ -1,8 +1,8 @@
 {
 "updateTime":"2020.6.7",
-"newVersionCode":"33",
+"newVersionCode":"34",
 "newVersionName":"1.4.2",
-"minVersionCode":"34",
+"minVersionCode":"33",
 "information":"本次更新包含功能更新和质量更新。",
 "content":"请注意：由于服务器升级，1.4.1之前版本部分功能失效，请及时更新以使用全部功能。\n检测密钥、共享密钥服务恢复\n为适应服务器升级，移除分享密钥、旧版本密钥、记录密钥历史、自动检测密钥可用性功能\n新增零售版密钥（首页-零售版密钥）及提示\n优化弹窗UI、检测密钥、使用手册、通知栏提醒、爱好论坛\n修复若干Bug",
 "url":"https://too-young.lanzous.com/i7oRqdfszwd"
