@@ -1,4 +1,5 @@
-滑动布局1.addView(loadlayout({
+if tonumber(versionCode)<33 then
+  滑动布局1.addView(loadlayout({
                 CardView;
                 id="公告";
                 elevation="0";
@@ -34,7 +35,7 @@
                         MarText;
                         singleLine="true";
                         ellipsize="marquee";
-                        text="20.06.01公告：小爱共享密钥服务器正在维护，暂停使用，目前仅可使用网页激活功能，恢复时间未知。",
+                        text="小爱共享密钥服务器升级完成，共享密钥、检测密钥等功能需升级后才可使用，请立即升级应用以使用全部功能。",
                         textColor=内容颜色;
                         layout_height="fill",
                         textSize="16sp",
@@ -44,3 +45,4 @@
                   };
                 },
               }),0)
+end
