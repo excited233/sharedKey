@@ -4,6 +4,6 @@
 "newVersionName":"1.4.8",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新。",
-"content":[[<!--如果你看到这行文字，请更新应用，新版本优化了更新日志的显示方式\n-->优化更新日志的显示方式<br>为图片按钮增加了ContentDescription注释，提升无障碍使用体验<br><small>了解详情请访问https://developer.android.google.cn/guide/topics/ui/accessibility/apps#describe-ui-element</small><br>优化联系邮箱方式<br>修复无法查看手动输入版本密钥的问题<br>极大提升查看密钥的及时性<br>优化主页卡片布局<br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i>]],
+"content":"<!--如果你看到这行文字，请更新应用，新版本优化了更新日志的显示方式\n-->优化更新日志的显示方式<br>为图片按钮增加了ContentDescription注释，提升无障碍使用体验<br><small>了解详情请访问https://developer.android.google.cn/guide/topics/ui/accessibility/apps#describe-ui-element</small><br>优化联系邮箱方式<br>修复无法查看手动输入版本密钥的问题<br>极大提升查看密钥的及时性<br>优化主页卡片布局<br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i>",
 "url":"https://too-young.lanzous.com/iMaHJe8ds9c"
 }
