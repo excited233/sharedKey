@@ -1,9 +1,16 @@
 {
-"updateTime":"2020.7.5",
-"newVersionCode":"42",
-"newVersionName":"1.4.9.1",
+"updateTime":"2020.7.10",
+"newVersionCode":"43",
+"newVersionName":"1.5.0",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新和功能更新。",
-"content":"<!--如果你看到这行文字，请更新应用，新版本优化了更新日志的显示方式\n--><ul><li>新增钉住功能，可将密钥图片钉至检测密钥页面，检测更便捷</li></ul><small>以下是近期更新内容：<ul><li>优化更新日志的显示方式</li><li>为图片按钮增加了ContentDescription注释，提升无障碍使用体验</li><small>了解详情请访问：<i>https://developer.android.google.cn/guide/topics/ui/accessibility/apps#describe-ui-element</i></small><li>优化联系邮箱方式</li><li>修复无法查看手动输入版本密钥的问题</li><li>极大提升查看密钥的及时性</li><li>优化主页卡片布局</li></ul><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
-"url":"https://too-young.lanzous.com/izUUBebzxeh"
+"content":[["
+<!--如果你看到这行文字，请更新应用，新版本优化了更新日志的显示方式\n-->
+<b>新增 共享密钥Plus</b><br>
+包含各版本零售版、批量版密钥，需要登录爱好论坛<br>
+<b>优化 提高应用的稳定性</b><br>
+<b>优化 应用的流畅度</b><br>
+<i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>
+"]],
+"url":"https://too-young.lanzous.com/igD45ehp28b"
 }
