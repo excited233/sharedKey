@@ -1,9 +1,9 @@
 {
-"updateTime":"2020.8.5",
-"newVersionCode":"52",
-"newVersionName":"1.5.5",
+"updateTime":"2020.8.8",
+"newVersionCode":"54",
+"newVersionName":"1.5.7",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新和功能更新。",
-"content":"<!--如果你看到这行文字，请更新应用，新版本优化了更新日志的显示方式\n--><br><b>提示 在新手引导页如遇网络不畅可尝试切换网络、挂梯子等操作</b><br><br><b>修复主页按钮位置出错的问题</b><br><br><b>新增 实验室</b><br><small>新增沉浸导航栏<br>可提前体验测试中的新功能</small><br><br><b>优化 首页、对话框按钮UI</b><br><br><b>优化 安装包体积</b><br><br><b>优化 提高应用的稳定性</b><br><br><b>优化 应用的流畅度</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
-"url":"https://www.lanzoui.com/ivzdyfbx8li"
+"content":"<br><b>大幅减少安装包体积和应用基础数据，安装包不到1MB</b><br><br><b>实验室新增不自动加载在线内容，可帮助节省流量</b><br><br><b>提升启动速度和使用流畅度</b><br><br><b>首页UI优化，修复按钮错位的问题</b><br><br><b>优化 提高应用的稳定性</b><br><br><b>优化 应用的流畅度</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
+"url":"https://www.lanzoui.com/iE5q6ffi35g"
 }
