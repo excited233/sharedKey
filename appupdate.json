@@ -1,9 +1,9 @@
 {
-"updateTime":"2020.8.17",
-"newVersionCode":"58",
-"newVersionName":"1.6.0",
+"updateTime":"2020.8.25",
+"newVersionCode":"59",
+"newVersionName":"1.6.1",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新和功能更新。",
-"content":"<br><b>可设置启动密码，提升安全性</b><br><br><b>修复Android 9及以上版本部分功能无法联网的问题</b><br><br><b>优化 提高应用的稳定性</b><br><br><b>优化 应用的流畅度</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
-"url":"https://www.lanzoui.com/iVbUvfptcgh"
+"content":"<br><b>共享密钥分类更改为「零售版密钥」、「批量版密钥」和「共享密钥Plus」，修复共享密钥无内容的问题</b><br><br><b>管理空间支持备份、恢复数据</b><br><br><b>优化 提高应用的稳定性</b><br><br><b>优化 应用的流畅度</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
+"url":"https://www.lanzoui.com/i5IQeg1qv3c"
 }
