@@ -1,4 +1,5 @@
 --test
+task(500,function()
 versionCode=tonumber(packinfo.versionCode)
 if versionCode>=60 and pcall(function() activity.getPackageManager().getPackageInfo("tooyoung.sharedkey",0) end) then
   MLayout={
@@ -185,3 +186,4 @@ if versionCode>=60 and pcall(function() activity.getPackageManager().getPackageI
   弹窗设置布局(MLayout)
   弹窗打开()
 end
+end)
