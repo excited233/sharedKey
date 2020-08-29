@@ -1,9 +1,9 @@
 {
-"updateTime":"2020.8.26",
-"newVersionCode":"60",
-"newVersionName":"1.6.2",
+"updateTime":"2020.8.29",
+"newVersionCode":"61",
+"newVersionName":"1.6.2.1",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新和功能更新。",
 "content":"<small><b>注意！</b>1.6.2及以上版本变更包名和签名，升级后请卸载旧版本！</small><br><b>共享密钥分类更改为「零售版密钥」、「批量版密钥」和「共享密钥Plus」，修复共享密钥无内容的问题</b><br><br><b>修复部分设置项不能保存的问题</b><br><br><b>为解决软件被误报毒的问题，更换了包名和签名</b><br><br><b>设置数据升级，升级后保存的设置将重置</b><br><br><b>管理空间支持备份、恢复数据</b><br><br><b>优化 提高应用的稳定性</b><br><br><b>优化 应用的流畅度</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
-"url":"https://www.lanzoui.com/ifDvcg38mji"
+"url":"https://www.lanzoui.com/iWbscg6b90h"
 }
