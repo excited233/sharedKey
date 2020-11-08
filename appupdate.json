@@ -1,7 +1,7 @@
 {
 "updateTime":"2020.11.08",
-"newVersionCode":"71",
-"newVersionName":"1.6.5",
+"newVersionCode":"72",
+"newVersionName":"1.6.5.1",
 "minVersionCode":"34",
 "information":"本次更新包含质量更新。",
 "content":"<small><b>注意！</b>1.6.2及以上版本变更包名和签名，升级后请卸载旧版本！</small><br><br><b>如更新后出现问题，请尝试清除数据</b><br><br><b>优化首页UI</b><br><br><b>深色模式支持跟随系统，修复任务进行时切换深色模式后无法打开应用的问题</b><br><br><b>修复后台被杀后重启无响应等多个问题</b><br><br><i><small>公告：此应用功能已经趋于完善，之后将会减少更新频率，如遇到问题，请到 关于-作者-联系 中联系作者进行反馈。</small></i></small>",
